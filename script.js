@@ -3,10 +3,10 @@ var generateBtn = document.querySelector("#generate");
 
 //Establish Password Length
 function generatePassword() {
-  var passLength = prompt("How long would you like your password to be? (hint: 8-128)");
+  var passLength = prompt("Please select a Password Length, must be between 8 and 128 charactors long.");
   
   if (passLength < 8 || passLength > 128 ) {
-    alert("Please enter a character length that is between 8 and 128!");
+    alert("The length of your password must be between 8 and 128 characters long.");
     return generatePassword();
   }
   if (passLength >=8 && passLength <= 128) {
@@ -47,7 +47,7 @@ function generatePassword() {
   if (upperChar===false) {
     var upperChar = [""]
   }
-  //variable Created My Criteria
+  //variable Created via Criteria input to Create Password
   var randomChar = speChar + num + lowerChar + upperChar
 
   //Loop for password length 
