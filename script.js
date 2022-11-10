@@ -12,10 +12,10 @@ function generatePassword() {
   if (passLength >=8 && passLength <= 128) {
 
   //Establish Password Criteria
-  var num = confirm("Would you like Numbers?");
-  var lowerChar = confirm("Would you like lowercase letters?");
-  var upperChar = confirm("Would you like UPPERCASE LETTERS?");
-  var speChar = confirm("Would you like $pec!al Characters?");
+  var num = confirm("Do you want Numbers in your Password?");
+  var lowerChar = confirm("Do you want lowercase letters in your Password?");
+  var upperChar = confirm("Do you want UPPERCASE LETTERS in your Password?");
+  var speChar = confirm("Do you want $pec!al Characters in your Password?");
   }
   //Makes user answer Criteria Selection
   if (speChar===false && num===false && lowerChar===false && upperChar===false) {
