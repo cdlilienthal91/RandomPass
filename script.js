@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 //Establish Password Length
 function generatePassword() {
-  var passLength = prompt("Please select a Password Length, must be between 8 and 128 charactors long.");
+  var passLength = prompt("Please select a Password Length, *NOTE, your password must be between 8 and 128 charactors long.");
   
   if (passLength < 8 || passLength > 128 ) {
     alert("The length of your password must be between 8 and 128 characters long.");
@@ -12,10 +12,10 @@ function generatePassword() {
   if (passLength >=8 && passLength <= 128) {
 
   //Establish Password Criteria
-  var num = confirm("Do you want Numbers in your Password?");
-  var lowerChar = confirm("Do you want lowercase letters in your Password?");
-  var upperChar = confirm("Do you want UPPERCASE LETTERS in your Password?");
-  var speChar = confirm("Do you want $pec!al Characters in your Password?");
+  var num = confirm("Do you want Numbers in your Password? Click OK for Yes, Cancel for No. ");
+  var lowerChar = confirm("Do you want lowercase letters in your Password? Click OK for Yes, Cancel for No.");
+  var upperChar = confirm("Do you want UPPERCASE LETTERS in your Password? Click OK for Yes, Cancel for No.");
+  var speChar = confirm("Do you want $pec!al Characters in your Password? Click OK for Yes, Cancel for No.");
   }
   //Makes user answer Criteria Selection
   if (speChar===false && num===false && lowerChar===false && upperChar===false) {
