@@ -8,5 +8,8 @@ Simple to use, Secure, and Random Password Generator. Pictured Below.
 3. Answer the questions with OK being Yes, and Cancel for No. 
 4. Once all the on screen questions are answered. Your new Secure Random Pass will have been created, and display in the text box.
 
+# Created By
+https://github.com/cdlilienthal91
+
 # How to Contribute 
 This was built with HTML, CSS, and JS. Any additional help is always welcome. Thank you. 
